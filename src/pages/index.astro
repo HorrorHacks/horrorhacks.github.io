@@ -4,12 +4,25 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Horror Hacks</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>Horror Hacks</h1>
 	</body>
 </html>
+
+<style lang="scss">
+	@use "../vars";
+
+	h1 {
+		font-family: vars.$title-font;
+		color: vars.$text;
+	}
+
+	* {
+		background-color: vars.$background;
+	}
+</style>
