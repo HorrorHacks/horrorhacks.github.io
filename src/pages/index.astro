@@ -1,4 +1,6 @@
 ---
+import logo from '../../black-bg-logo-removebg.png';
+import Hero from '../components/Hero.astro';
 ---
 
 <html lang="en">
@@ -10,19 +12,16 @@
 		<title>Horror Hacks</title>
 	</head>
 	<body>
-		<h1>Horror Hacks</h1>
+		<Hero />
 	</body>
 </html>
 
 <style lang="scss">
 	@use "../vars";
 
-	h1 {
-		font-family: vars.$title-font;
-		color: vars.$text;
-	}
-
-	* {
+	body, html {
 		background-color: vars.$background;
+		height: 100%;
+		padding: 1rem 1rem;
 	}
 </style>

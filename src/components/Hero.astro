@@ -1,0 +1,170 @@
+---
+import logo from '../../black-bg-logo-removebg.png';
+---
+
+<div class="hero-body">
+	<div class="hero-text">
+		<div class="hero-heading">
+			<h1 class="hero-title">Horror Hacks</h1>
+			<img class="hero-logo" src={logo} alt="Logo" />
+		</div>
+		<p class="hero-subtitle">A halloween-themed hackathon for high school students</p>
+		<button class="sign-up">Sign Up</button>
+	</div>
+</div>
+
+<style lang="scss">
+	@use "../vars";
+
+	.hero-body {
+		height: 50%;
+
+		position: relative;
+	}
+
+	.hero-text {
+		text-align: center;
+		color: vars.$text;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.hero-heading {
+		align-items: center;
+		display: flex;
+	}
+
+	.hero-title {
+		margin: 0;
+		padding: 10px;
+		line-height: 115%;
+
+		font-family: vars.$title-font;
+		font-size: 2.25rem;
+	}
+
+	.hero-logo {
+		max-width: 7rem;
+	}
+
+	.hero-subtitle {
+		font-family: vars.$text-font;
+	}
+
+	.sign-up {
+		align-self: center;
+
+  		appearance: none;
+  		background-color: #FAFBFC;
+  		border: 1px solid rgba(27, 31, 35, 0.15);
+  		border-radius: 6px;
+  		box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  		box-sizing: border-box;
+  		color: #24292E;
+  		cursor: pointer;
+  		display: inline-block;
+  		font-family: vars.$text-font;
+  		font-size: 14px;
+  		font-weight: 500;
+  		line-height: 20px;
+  		list-style: none;
+  		padding: 6px 16px;
+  		position: relative;
+  		user-select: none;
+  		-webkit-user-select: none;
+  		touch-action: manipulation;
+  		vertical-align: middle;
+  		white-space: nowrap;
+  		word-wrap: break-word;
+
+		transition: all 0.3s ease-in-out;
+	}
+
+	.sign-up:hover {
+		transition: all 0.3s ease-in-out;
+		transform: scale(1.2);
+	}
+
+	.sign-up:active {
+	  background-color: #EDEFF2;
+	  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+	  transition: none 0s;
+	}
+
+	.sign-up:focus {
+	  outline: 1px transparent;
+	}
+
+	@media (max-width: 300px) {
+		.hero-title {
+			font-size: 1.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 0.75rem;
+		}
+	}
+
+	@media (orientation: portrait) {
+
+		.hero-body {
+			padding: 0;
+		}
+
+	}
+
+	@media (min-width: 481px) {
+
+		.hero-title {
+			font-size: 4.5rem;
+		}
+
+		.hero-logo {
+			max-width: 12rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.5rem;
+		}
+
+		.sign-up {
+			font-size: 24px;
+
+  			padding: 8px 20px;
+		}
+
+	}
+
+	@media (min-width: 769px) {
+
+		.hero-title {
+			width: min-content;
+
+			font-size: 4.5rem;
+		}
+
+		.hero-logo {
+			max-width: 12.5rem;
+		}
+
+	}
+
+	@media (min-width: 1250px) {
+
+		.hero-title {
+			width: auto;
+
+			font-size: 5.25rem;
+		}
+
+		// TODO: Fix gap between logo and title text on laptop size
+		.hero-logo {
+			max-width: 15rem;
+		}
+
+	}
+</style>
