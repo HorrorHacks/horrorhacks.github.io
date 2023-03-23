@@ -1,0 +1,66 @@
+
+<!-- Card has very slightly rounded corners and glowing white undershadow -->
+
+<div class="cards-grid">
+    <div class="card">
+        <h2 class="card-title">What is Horror Hacks?</h2>
+        <p class="card-text">
+            Buckle up for the spooky season! We introduce to you Horror Hacks, a free, virtual 30-hour hackathon centered around a Halloween theme, taking place in October. This hackathon is designed for high school students from various backgrounds and skill levels to indulge in a collaborative atmosphere where one's developer skills are destined to improve. Projects created by teams of up to 4 can include anything from websites to spooky games to countless other innovative technologies. Join us to kick off the holiday season with a learning-packed experience and an opportunity to win cool prizes!
+        </p>
+    </div>
+
+    <div class="card card-right">
+        <h2 class="card-title">What is the theme?</h2>
+        <p class="card-text">
+            Horror Hacks is centered around a simple yet broad theme - Halloween. Any creation centered around horror and spookiness will sufficiently scare us, from a creepy game to an eerie app. We will be presenting awards to the most spine-chilling of creations!
+        </p>
+    </div>
+</div>
+
+<style lang="scss">
+	@use "../vars";
+
+    .cards-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        gap: 2rem;
+
+        padding: 1rem 0;
+    }
+
+    .card {
+        height: max-content;
+        width: 80%;
+        padding: 0rem 3rem;
+
+        // TODO: Remove shadow
+        // box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+        // border-radius: 0.75rem;
+
+    }
+
+    .card-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .card-text {
+            text-align: right;
+        }
+    }
+
+    h2 {
+        font-family: vars.$title-font;
+        color: vars.$text;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+    }
+
+    p {
+        font-family: vars.$text-font;
+        color: vars.$text;
+    }
+
+</style>
