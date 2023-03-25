@@ -10,7 +10,7 @@ import logo from '../../black-bg-logo-removebg.png';
 		</div>
         <div class="hero-subtitles">
 		    <p class="hero-subtitle">A halloween-themed hackathon for high school students</p>
-            <p class="hero-subtitle hero-subtitle-2">October 7-8, 2023</p>
+            <p class="hero-subtitle2">October 7-8, 2023</p>
         </div>
 		<button class="sign-up">Sign Up</button>
 	</div>
@@ -62,6 +62,20 @@ import logo from '../../black-bg-logo-removebg.png';
 		font-family: vars.$text-font;
 	}
 
+    // TODO Figure out how to hide element beofre animation CSS
+    .hero-subtitle2 {
+		font-family: vars.$text-font;
+        font-weight: 600;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+
+        // animation-fill-mode: forwards;
+
+        // animation-delay: 2s;
+        // opacity: 0; TODO: Use when animating
+    }
+
+
+
     @keyframes flicker {
       0% {
         opacity: 0.4;
@@ -106,18 +120,6 @@ import logo from '../../black-bg-logo-removebg.png';
         opacity: 1;
       }
     }
-
-    // TODO Figure out how to hide element beofre animation CSS
-    .hero-subtitle-2 {
-        font-weight: 600;
-
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
-        animation-fill-mode: forwards;
-
-        animation-delay: 2s;
-        // opacity: 0; TODO: Use when animating
-    }
-
 
 
 	.sign-up {
@@ -193,8 +195,12 @@ import logo from '../../black-bg-logo-removebg.png';
 			max-width: 12rem;
 		}
 
-		.hero-subtitle, .hero-subtitle-2 {
+		.hero-subtitle {
 			font-size: 1.5rem;
+		}
+
+		.hero-subtitle2 {
+        	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
 		}
 
 		.sign-up {

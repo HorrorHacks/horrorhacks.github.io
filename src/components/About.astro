@@ -1,6 +1,4 @@
 
-<!-- Card has very slightly rounded corners and glowing white undershadow -->
-
 <div class="cards-grid">
     <div class="card">
         <h2 class="card-title">What is Horror Hacks?</h2>
@@ -14,6 +12,18 @@
         <p class="card-text">
             Horror Hacks is centered around a simple yet broad theme - Halloween. Any creation centered around horror and spookiness will sufficiently scare us, from a creepy game to an eerie app. We will be presenting awards to the most spine-chilling of creations!
         </p>
+    </div>
+
+    <!-- Add FAQ with dropdowns for answers -->
+    <div class="faq">
+        <div class="faq-title">
+            <!-- <h1>Frequently Asked Questions</h1> -->
+        </div>
+
+        <div class="faq-box">
+            <h3></h3>
+        </div>
+
     </div>
 </div>
 
@@ -55,12 +65,25 @@
     h2 {
         font-family: vars.$title-font;
         color: vars.$text;
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+        // text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
     }
 
     p {
         font-family: vars.$text-font;
         color: vars.$text;
+    }
+
+    @media (min-content: 769px) {
+
+        .card-right {
+            .card-title {
+
+            }
+            .card-text {
+                max-width: 70%;
+            }
+        }
+
     }
 
 </style>
