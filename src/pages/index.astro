@@ -1,6 +1,7 @@
 ---
 import About from '../components/About.astro';
 import Hero from '../components/Hero.astro';
+import Sponsors from '../components/Sponsors.astro';
 ---
 <!-- TODO: Add intro spooky sound -->
 <!-- Fade everything else in after horror hacks title pops up -->
@@ -11,11 +12,14 @@ import Hero from '../components/Hero.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
+  		<script src="https://unpkg.com/feather-icons"></script>
 		<title>Horror Hacks</title>
 	</head>
 	<body>
 		<Hero />
 		<About />
+		<Sponsors />
 	</body>
 </html>
 
@@ -24,7 +28,7 @@ import Hero from '../components/Hero.astro';
 
 	body, html {
 		background-color: vars.$background;
-		height: 100%;
+		// height: 100%;
 		padding: 1rem 1rem;
 	}
 </style>

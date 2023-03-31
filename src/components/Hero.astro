@@ -22,6 +22,7 @@ import logo from '../../black-bg-logo-removebg.png';
 	.hero-body {
 		margin-bottom: 2rem;
 		position: relative;
+
 	}
 
 	.hero-text {
@@ -38,11 +39,13 @@ import logo from '../../black-bg-logo-removebg.png';
 	.hero-heading {
 		align-items: center;
 		display: flex;
+
+		margin: 0 5rem;
 	}
 
 	.hero-title {
 		margin: 0;
-		padding: 10px;
+		padding: 0.4rem;
 		line-height: 115%;
 
 		font-family: vars.$title-font;
@@ -50,7 +53,7 @@ import logo from '../../black-bg-logo-removebg.png';
 	}
 
 	.hero-logo {
-		max-width: 7rem;
+		max-width: 5.5rem;
 	}
 
     .flicker {
@@ -167,20 +170,17 @@ import logo from '../../black-bg-logo-removebg.png';
 	}
 
 	@media (max-width: 300px) {
+
+		.hero-body {
+			padding: 1rem;
+		}
+
 		.hero-title {
 			font-size: 1.5rem;
 		}
 
 		.hero-subtitle {
 			font-size: 0.75rem;
-		}
-
-	}
-
-	@media (orientation: portrait) {
-
-		.hero-body {
-			padding: 0;
 		}
 
 	}

@@ -1,0 +1,100 @@
+---
+import hcb from "../../hcb-logo-outlined-white.svg";
+import hc from "../../hc-flag-standalone.svg";
+---
+
+<div class="body">
+    <h1 class="title">
+        Sponsors
+    </h1>
+    <!-- TODO: Add links to each sponsor's home page to each logo -->
+    <!-- TODO: Align logos correctly -->
+    <div class="logos">
+        <!--TODO: Add horror hacks bank link here -->
+        <a href="https://bank.hackclub.com/horror-hacks" class="logo-link" target="_blank">
+            <img class="logo" src={hcb} alt="Hack Club Bank" />
+        </a>
+        <a href="https://hackclub.com/" class="logo-link" target="_blank">
+            <img class="logo" src={hc} alt="Hack Club" />
+        </a>
+    </div>
+    <div class="desc">
+        <!-- TODO: Scroll down to contacts, maybe use param put into this component -->
+        <!-- Add mail icon -->
+        <!-- <Icon name="mdi:email" /> -->
+        <p>Interested in sponsoring Horror Hacks?</p>
+        <a class="contact-us" href="/">Contact us</a>
+    </div>
+</div>
+
+<style lang="scss">
+	@use "../vars";
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+		font-family: vars.$title-font;
+        color: vars.$text;
+        font-weight: 600;
+        // text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+
+        text-align: center;
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+
+        p {
+            color: vars.$text;
+            font-family: vars.$text-font;
+        }
+    }
+
+
+    .contact-us {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        gap: 1rem;
+    }
+
+    .contact-us {
+        font-family: vars.$text-font;
+        color: vars.$text;
+        text-decoration: underline;
+    }
+
+    .logos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1.2rem;
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+        }
+
+        .logo {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .desc {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+
+</style>
