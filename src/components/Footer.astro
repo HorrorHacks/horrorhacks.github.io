@@ -1,0 +1,43 @@
+---
+import insta from '../../instagram-icon.svg'
+import github from '../../github-icon.svg'
+import discord from '../../discord-icon.svg'
+---
+
+<div class="body">
+    <div class="logos">
+        <img class="logo" src={insta} alt="Hack Club Bank" />
+        <img class="logo" src={github} alt="Hack Club Bank" />
+        <img class="logo" src={discord} alt="Hack Club Bank" />
+    </div>
+    <div class="text">
+        Run by Alpharetta High School's Hack Club
+    </div>
+</div>
+
+<style lang="scss">
+    @use "../vars";
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+
+        // TODO: Reduce padding up to a certain size
+        padding: 1rem;
+    }
+
+    .logos {
+        display: flex;
+    }
+
+    .logo {
+		background-color: vars.$background;
+    }
+
+    .text {
+        font-family: vars.$text-font;
+        color: vars.$text;
+    }
+
+</style>
