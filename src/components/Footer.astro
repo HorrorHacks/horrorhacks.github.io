@@ -21,6 +21,8 @@ import discord from '../../discord-icon.svg'
     .body {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         row-gap: 1rem;
 
         // TODO: Reduce padding up to a certain size
@@ -29,15 +31,34 @@ import discord from '../../discord-icon.svg'
 
     .logos {
         display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 2.5%;
     }
 
     .logo {
 		background-color: vars.$background;
+        width: 5%;
     }
 
     .text {
         font-family: vars.$text-font;
         color: vars.$text;
+
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+
+        .body {
+            margin-top: 1rem;
+        }
+
+        .logo {
+            width: 10%;
+        }
+
     }
 
 </style>

@@ -7,7 +7,7 @@
         </p>
     </div>
 
-    <div class="card card-right">
+    <div class="card card-right card-bottom">
         <h2 class="card-title">What is the theme?</h2>
         <p class="card-text">
             Horror Hacks is centered around a simple yet broad theme - Halloween. Any creation centered around horror and spookiness will sufficiently scare us, from a creepy game to an eerie app. We will be presenting awards to the most spine-chilling of creations!
@@ -36,15 +36,13 @@
         align-items: center;
         justify-content: space-evenly;
 
-        gap: 2rem;
-
         padding: 1rem 0 0 0;
     }
 
     .card {
         height: max-content;
         width: 80%;
-        padding: 0rem 3rem;
+        padding: 2rem 3rem;
 
         // TODO: Remove shadow
         // box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
@@ -62,6 +60,10 @@
         }
     }
 
+    .card-bottom {
+        padding: 0rem;
+    }
+
     h2 {
         font-family: vars.$title-font;
         color: vars.$text;
@@ -76,9 +78,19 @@
     @media (min-width: 1251px) {
 
         // .card-right {
+            .card {
+                width: 80%;
+                padding: 2rem 5.5rem;
+            }
+
             .card-text {
                 max-width: 70%;
             }
+
+            // .card-text {
+            //     // max-width: 70%;
+            //     padding: 0 5.5rem;
+            // }
         // }
 
     }
