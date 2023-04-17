@@ -6,9 +6,15 @@ import discord from '../../discord-icon.svg'
 
 <div class="body">
     <div class="logos">
-        <img class="logo" src={insta} alt="Hack Club Bank" />
-        <img class="logo" src={github} alt="Hack Club Bank" />
-        <img class="logo" src={discord} alt="Hack Club Bank" />
+        <a href="https://instagram.com/_horrorhacks_">
+            <img class="logo" src={insta} alt="Instagram" />
+        </a>
+        <a href="https://github.com/HorrorHacks">
+            <img class="logo" src={github} alt="Github" />
+        </a>
+        <a href="https://discord.gg/YTypgYhvHC">
+            <img class="logo" src={discord} alt="Discord" />
+        </a>
     </div>
     <div class="text">
         Run by Alpharetta High School's Hack Club
@@ -35,11 +41,19 @@ import discord from '../../discord-icon.svg'
         justify-content: center;
 
         gap: 2.5%;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5%;
+
+		    background-color: vars.$background;
+        }
     }
 
     .logo {
-		background-color: vars.$background;
-        width: 5%;
+        width: 100%;
     }
 
     .text {
